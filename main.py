@@ -23,8 +23,8 @@ for entry in entries:
 
 df = pd.DataFrame(analyses)
 print(df.dtypes)
-pos = px.line(x=df['date'], y=df['pos'], labels={"x": "date", "y": "positivity rating"})
-neg = px.line(x=df['date'], y=df['neg'], labels={"x": "date", "y": "negativity rating"})
+pos = px.line(x=df['date'], y=df['pos'], labels={"x": "date", "y": "positivity"})
+neg = px.line(x=df['date'], y=df['neg'], labels={"x": "date", "y": "negativity"})
 
 st.title("Diary Analysis")
 
